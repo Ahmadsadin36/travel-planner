@@ -6,11 +6,18 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
+    "@auth/drizzle-adapter": "^1.10.0",
     "daisyui": "^5.1.12",
+    "drizzle-orm": "^0.44.5",
     "next": "15.5.3",
+    "next-auth": "^4.24.11",
+    "pg": "^8.16.3",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },
@@ -20,6 +27,8 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "dotenv": "^17.2.2",
+    "drizzle-kit": "^0.31.4",
     "eslint": "^9",
     "eslint-config-next": "15.5.3",
     "tailwindcss": "^4",
