@@ -12,6 +12,7 @@
     "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
+    "@auth/core": "^0.40.0",
     "@auth/drizzle-adapter": "^1.10.0",
     "daisyui": "^5.1.12",
     "drizzle-orm": "^0.44.5",

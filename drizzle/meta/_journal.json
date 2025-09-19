@@ -8,6 +8,13 @@
       "when": 1758188694356,
       "tag": "0000_bitter_microchip",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1758281422041,
+      "tag": "0001_first_doctor_strange",
+      "breakpoints": true
     }
   ]
 }
