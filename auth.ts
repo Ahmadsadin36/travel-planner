@@ -1,13 +1,14 @@
-// auth.ts (root) — v4
-import NextAuth, { type NextAuthOptions, getServerSession } from "next-auth";
+// auth.ts — Auth.js v5 (with Drizzle + GitHub)
+
+import NextAuth from "next-auth";
 import GitHub from "next-auth/providers/github";
 import { DrizzleAdapter } from "@auth/drizzle-adapter";
 import { db } from "@/db";
 import { users, accounts, sessions, verificationTokens } from "@/db/schema";
 
-export const authOptions: NextAuthOptions = {
+// v5 API: destructure handlers + helpers
+export const { handlers, auth, signIn, signOut } = NextAuth({
   adapter: DrizzleAdapter(db, {
-    // 👇 tell the adapter the exact Drizzle tables to use
     usersTable: users,
     accountsTable: accounts,
     sessionsTable: sessions,
@@ -18,8 +19,7 @@ export const authOptions: NextAuthOptions = {
       clientId: process.env.AUTH_GITHUB_ID!,
       clientSecret: process.env.AUTH_GITHUB_SECRET!,
       authorization: { params: { scope: "read:user user:email" } } as any,
-        allowDangerousEmailAccountLinking: true,
-      
+      allowDangerousEmailAccountLinking: true,
     }),
   ],
   session: { strategy: "database" },
@@ -29,8 +29,4 @@ export const authOptions: NextAuthOptions = {
       return session;
     },
   },
-};
-
-export async function auth() {
-  return getServerSession(authOptions);
-}
+});

@@ -1,7 +1,6 @@
 // components/AuthButton.tsx
 "use client";
 import { signIn, signOut } from "next-auth/react";
-
 export default function AuthButton({ isAuthed }: { isAuthed: boolean }) {
   return isAuthed ? (
     <button
