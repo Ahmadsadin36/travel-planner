@@ -62,12 +62,15 @@ db/
 ### Setup
 
 1. **Clone repo**
+
    ```bash
    git clone https://github.com/yourusername/travel-planner.git
    cd travel-planner
    ```
+
 2. **Install dependencies**
    npm install
+
 3. **Environment variables**
    Create a .env.local file:
    DATABASE_URL=postgres://username:password@localhost:5432/travelplanner
@@ -77,11 +80,7 @@ db/
    NEXT_PUBLIC_MAPBOX_TOKEN=your_mapbox_token
 
 4. **Run database migrations**
-   npm run db:push
-
-or
-
-npm run db:migrate
+   npm run db:push or npm run db:migrate
 
 5. **Start dev server**
    npm run dev
