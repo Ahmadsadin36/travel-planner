@@ -1,4 +1,10 @@
 # 🌍 Travel Planner
+## Web-app pictures:
+<img width="1874" height="799" alt="1" src="https://github.com/user-attachments/assets/1d405961-a2d4-427a-8561-d856ee95cdb0" />
+<img width="1860" height="800" alt="2" src="https://github.com/user-attachments/assets/9f8ba8e4-648d-489e-8c7a-ba440ae220bb" />
+<img width="1877" height="819" alt="3" src="https://github.com/user-attachments/assets/bae38be5-b1eb-433a-accd-ecdb1a9f3515" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/16788095-f36f-4c4c-80bf-c713f60c4b24" />
+
 
 Travel Planner is a full-stack dynamic web application that allows users to create trips, add locations with interactive maps, and visualize itineraries in a modern dashboard.  
 It is built with the latest **Next.js App Router**, **Auth.js v5**, **PostgreSQL + Drizzle ORM**, **Tailwind CSS + daisyUI**, and **Mapbox GL**.
