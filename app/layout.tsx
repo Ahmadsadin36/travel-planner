@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import "mapbox-gl/dist/mapbox-gl.css"; // ensures map styles are available globally
 
 export const metadata: Metadata = {
   title: "Travel Planner",
