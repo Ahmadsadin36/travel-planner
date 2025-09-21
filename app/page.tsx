@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function HomePage() {
   return (
-    <div className="container mx-auto px-4 py-12 space-y-16">
+    <div className="container mx-auto px-4 py-12 space-y-16 min-h-screen">
       {/* Hero */}
       <section className="text-center space-y-6">
         <h1 className="text-4xl md:text-5xl font-bold">
@@ -20,15 +20,15 @@ export default function HomePage() {
 
       {/* Guide */}
       <section className="grid md:grid-cols-3 gap-6">
-        <div className="card bg-base-100 shadow-sm">
+        <div className="card bg-base-200 shadow-sm">
           <div className="card-body">
             <h3 className="card-title">1. Sign in</h3>
             <p className="text-sm opacity-80">
-              Use your GitHub account to sign in (Google optional later).
+              Use your GitHub account to sign in.
             </p>
           </div>
         </div>
-        <div className="card bg-base-100 shadow-sm">
+        <div className="card bg-base-200 shadow-sm">
           <div className="card-body">
             <h3 className="card-title">2. Create a trip</h3>
             <p className="text-sm opacity-80">
@@ -36,11 +36,11 @@ export default function HomePage() {
             </p>
           </div>
         </div>
-        <div className="card bg-base-100 shadow-sm">
+        <div className="card bg-base-200 shadow-sm">
           <div className="card-body">
             <h3 className="card-title">3. Add locations</h3>
             <p className="text-sm opacity-80">
-              Search an address, drop pins, and see your route on Google Maps.
+              Search an address, drop pins, and see your route on a map.
             </p>
           </div>
         </div>
