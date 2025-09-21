@@ -75,13 +75,18 @@ db/
    AUTH_GITHUB_SECRET=your_github_client_secret
    NEXTAUTH_SECRET=super-secret-key
    NEXT_PUBLIC_MAPBOX_TOKEN=your_mapbox_token
+
 4. **Run database migrations**
    npm run db:push
 
-# or
+or
 
-npm run db:migrate 5. **Start dev server**
-npm run dev 5. **Open http://localhost:3000**
+npm run db:migrate
+
+5. **Start dev server**
+   npm run dev
+
+6. **Open http://localhost:3000**
 
 🛠️ Development Steps (Completed)
 
@@ -118,7 +123,3 @@ Step 14: Nice-to-haves (export GPX/ICS, notes, dark map theme sync, trip filters
 👨‍💻 Developer
 
 Built by Ahmad Sadin
-
-📜 License
-
-MIT License
